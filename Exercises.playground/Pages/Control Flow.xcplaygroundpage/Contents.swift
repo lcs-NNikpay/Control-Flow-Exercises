@@ -38,7 +38,9 @@
 var temperature = 0
 
 // Answer Question 1 below
-
+if temperature == 0 {
+    print("Brr, grab your winter jacket!")
+}
 
 /*:
  
@@ -51,7 +53,12 @@ var temperature = 0
 temperature = -20
 
 // Answer Question 2 below
-
+let tempreture = -20
+if temperature <= -20 {
+  print("Don't leave your water glass outside!")
+} else {
+    print("Brr, grab your winter jacket!")
+}
 
 /*:
  
@@ -66,10 +73,16 @@ temperature = -20
  * Otherwise, prints "It could be shorts weather but you might still be a bit chilly!"
  
  */
-temperature = 15
+ temperature = 15
 
 // Answer Question 3 below
-
+if temperature == 15 {
+    print("It could be shorts weather but you might still be a bit chilly!")
+}else if tempreture == 0 {
+    print("Brr, grab your winter jacket!")
+}else if tempreture <= 0 {
+    print("Don't leave your water glass outside!")
+}
 /*:
  
  ### Question 4
@@ -88,7 +101,11 @@ let alwaysGetsAttentionBySayingGentsAndLadies = true
 let teachesOutdoorEd = true
 
 // Answer Question 4 below
-
+if hasRedHair && alwaysGetsAttentionBySayingGentsAndLadies && teachesOutdoorEd {
+    print("Must be Gordon!")
+}else {
+    print("Hmm, need more data to be sure")
+}
 
 /*:
  
@@ -109,7 +126,11 @@ let isComedy = false
 let starsTheRock = true
 
 // Answer Question 5 below
-
+if isAction && isComedy && starsTheRock {
+    print("Let's watch!")
+}else{
+    print("Sorry, guess we'll have to play Tic-Tac-Toe instead")
+}
 
 /*:
  
@@ -127,7 +148,17 @@ let starsTheRock = true
  */
 
 // Answer Question 6 below
-
+let finalGrade = 100
+switch finalGrade {
+case 80...100:
+    print("Youve learned")
+case 60...79:
+    print( "Hmm, not bad, but could be better.")
+  case 50...59:
+    print("Should have booked more Grove Times.")
+default:
+    print("default ")
+}
 
 
 
